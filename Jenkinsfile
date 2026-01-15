@@ -4,7 +4,7 @@ pipeline {
     environment {
         REGISTRY = "localhost:8083"
         IMAGE_NAME = "devops-app"
-        IMAGE_TAG = "\${BUILD_NUMBER}"
+        IMAGE_TAG = "${BUILD_NUMBER}"
     }
 
     stages {
