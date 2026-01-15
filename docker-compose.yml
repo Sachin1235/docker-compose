@@ -14,7 +14,7 @@ services:
       - "3306:3306"
 
   spring_app:
-    image: localhost:8083/devops-app:\${IMAGE_TAG}
+    image: localhost:8083/devops-app:${IMAGE_TAG}
     container_name: spring_app
     restart: always
     ports:
